@@ -1,0 +1,32 @@
+# ============================================================
+# ELSI-Brazil Falls Analysis
+# Files excluded from version control
+# ============================================================
+
+# Raw and processed datasets
+*.csv
+*.rds
+*.RData
+*.rda
+*.sav
+*.dta
+*.xlsx
+*.xls
+
+# RStudio files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# R temporary/cache files
+.Rcache/
+cache/
