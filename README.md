@@ -156,68 +156,28 @@ Because this is an observational analysis, these estimates should be interpreted
 
 Adjusted Odds Ratios and 95% confidence intervals from the survey-weighted logistic regression model are shown below.
 
-(![Forest Plot of factors associated with falls](outputs/figures/forest_plot_falls.png)
+![Forest Plot of factors associated with falls](outputs/figures/forest_plot_falls.png)
 The dashed vertical line at **OR = 1** represents the null value for the Odds Ratio.
 
 ---
+## Analysis Workflow
 
-## Repository Structure
+The analytical workflow included:
 
-```text
-elsi-brazil-falls-analysis/
-│
-├── README.md
-├── .gitignore
-│
-├── scripts/
-│   ├── 01_importacao_limpeza.R
-│   └── 02_analise_estatistica.R
-│
-├── outputs/
-│   ├── figures/
-│   │   └── forest_plot_falls.png
-│   │
-│   └── tables/
-│       ├── regressao_logistica.html
-│       └── resultados_modelo.csv
-│
-└── data/
-    └── README.md
-```
+1. Import and preparation of ELSI-Brazil third-wave data
+2. Selection of participants aged 60 years and older
+3. Recoding and missing-data handling
+4. Construction of multimorbidity and ADL indicators
+5. Specification of the complex survey design
+6. Survey-weighted descriptive analysis
+7. Bivariate association testing
+8. Survey-weighted logistic regression
+9. Estimation of adjusted Odds Ratios and 95% confidence intervals
+10. Visualization of the adjusted model using a Forest Plot
 
----
+The analysis was conducted in **R**, primarily using the `tidyverse`, `survey`, `gtsummary`, and `ggplot2` packages.
 
-## Reproducibility
-
-The analysis is organized into sequential R scripts.
-
-### `01_importacao_limpeza.R`
-
-Performs:
-
-- Data import
-- Selection of participants aged ≥60 years
-- Missing-value handling
-- Variable recoding
-- Construction of multimorbidity and ADL indicators
-- Preparation of the analytical dataset
-
-### `02_analise_estatistica.R`
-
-Performs:
-
-- Complex survey design specification
-- Weighted descriptive analysis
-- Survey-adjusted association tests
-- Logistic regression
-- Odds Ratio and confidence interval estimation
-- Regression table generation
-- Forest Plot generation
-- Export of analytical results
-
----
-
-## Skills Demonstrated
+> **Portfolio note:** This repository presents the statistical methodology, analytical workflow, and selected outputs as a portfolio case study. Participant-level ELSI-Brazil data and the original working analysis scripts are not distributed in this repository.## Skills Demonstrated
 
 This project demonstrates practical experience with:
 
