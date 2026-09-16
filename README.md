@@ -156,8 +156,7 @@ Because this is an observational analysis, these estimates should be interpreted
 
 Adjusted Odds Ratios and 95% confidence intervals from the survey-weighted logistic regression model are shown below.
 
-![Forest Plot of factors associated with falls](forest_plot_falls.png)
-
+(![Forest Plot of factors associated with falls](outputs/figures/forest_plot_falls.png)
 The dashed vertical line at **OR = 1** represents the null value for the Odds Ratio.
 
 ---
